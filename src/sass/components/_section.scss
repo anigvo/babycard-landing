@@ -14,7 +14,7 @@
       text-align: center;
       width: 70px;
       height: 7px;
-      background-color: red;
+      background-color: $main-color;
       position: absolute;
       bottom: -20px;
       left: 50%;
@@ -30,7 +30,7 @@
   }
   &__img {
     &--intro {
-      background-color: black;
+      background-color: black; // заглушка
       width: 50%;
       margin-left: 20px;
     }
