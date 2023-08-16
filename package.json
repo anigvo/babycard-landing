@@ -5,7 +5,7 @@
   "homepage": "https://anigvo.github.io/babycard-landing",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /babycard-landing/"
   },
   "repository": {
     "type": "git",
