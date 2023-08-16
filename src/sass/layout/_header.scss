@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-        flex-direction: column;
+    flex-direction: column;
   }
 
   &__logo {
@@ -13,7 +13,6 @@
   &__nav {
     width: 100%;
     display: flex;
-    align-items: center;
     @media screen and (min-width: 768px) {
     }
     display: flex;
@@ -30,9 +29,9 @@
   }
 
   &__link {
-
+    font-weight: 700;
     line-height: 1.14;
-    padding: 30px 0px;
+    padding: 20px 0px 40px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
@@ -61,7 +60,7 @@
       display: flex;
       align-items: center;
       color: black;
-      padding: 25px 0 10px 0;
+      padding: 20px 0 10px 0;
     }
 
     &.current {

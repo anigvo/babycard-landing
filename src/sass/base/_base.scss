@@ -1,7 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $background-color;
   color: $text-color;
-  font-family: AGLettericaCondensedC, sans-serif;
+  font-family: pragmaticactt, arial, sans-serif;
 }
 
 .visually-hidden {

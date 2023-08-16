@@ -1,21 +1,15 @@
 @font-face {
-  font-family: 'AGLettericaC';
-  src: local(''), url('../fonts/aglettericac.woff2') format('woff2'),
-    url('../fonts/aglettericac.woff') format('woff');
+  font-family: 'PragmaticaCTT';
+  src: local(''), url('../fonts/pragmaticactt.woff2') format('woff2'),
+    url('../fonts/pragmaticactt.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'AGLettericaC-Bold';
-  src: local(''), url('../fonts/aglettericac-bold.woff2') format('woff2'),
-    url('../fonts/aglettericac-bold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'AGLettericaCondensedC';
-  src: local(''), url('../fonts/aglettericacondensedc.woff2') format('woff2'),
-    url('../fonts/aglettericacondensedc.woff') format('woff');
+  font-family: 'PragmaticaCTT Bold';
+  src: local(''), url('../fonts/pragmaticactt-bold.woff2') format('woff2'),
+    url('../fonts/pragmaticactt-bold.woff') format('woff');
 }
 
 $background-color: #ffffff;
 $text-color: #000000;
-$main-color: red;
+$main-color: #e61919;

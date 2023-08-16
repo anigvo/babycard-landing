@@ -1,0 +1,31 @@
+.series {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  &__img {
+    margin-bottom: 20px;
+  }
+  &__name {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 21px;
+  }
+  &__wrapper {
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 17px;
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+  }
+  &__price {
+    font-weight: 700;
+    font-size: 28px;
+  }
+}
