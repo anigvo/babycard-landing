@@ -28,6 +28,8 @@
     font-weight: 400;
     letter-spacing: 1.19;
     font-size: 27px;
+    display: flex;
+    align-items: center;
     &--about {
       position: relative;
       font-weight: 700;
@@ -48,10 +50,16 @@
         transform: translateX(-50%);
       }
     }
+    &--red {
+      color: $main-color;
+    }
   }
   &__wrapper {
     display: flex;
     &--margin-bottom {
+      margin-bottom: 40px;
+    }
+    &:not(:last-child) {
       margin-bottom: 40px;
     }
   }
@@ -62,23 +70,59 @@
     }
   }
 
+  &__icon {
+    fill: $main-color;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
   &__video {
     width: 50%;
-
+    height: 450px;
     margin-right: 20px;
     shape-outside: content-box;
+    &--secondary {
+      height: 300px;
+    }
   }
   &__text {
     letter-spacing: 1.14;
     font-size: 17px;
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
     &--series {
       text-align: center;
     }
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
+  &__text-secondary {
+    letter-spacing: 1.14;
+    font-size: 20px;
+    margin-bottom: 10px;
+    &--center {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+
   &__content {
     flex: 1;
+  }
+  &__list {
+    letter-spacing: 1.14;
+    font-size: 17px;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &:first-child {
+      margin-top: 10px;
+    }
+  }
+  &__link {
+    font-weight: 700;
+    color: $text-color;
   }
 }
