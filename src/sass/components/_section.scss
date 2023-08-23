@@ -1,9 +1,8 @@
 .section {
   &:not(:last-child) {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
   &__title {
-    display: block;
     margin-bottom: 60px;
     position: relative;
     text-align: center;
@@ -83,7 +82,7 @@
     margin-right: 20px;
     shape-outside: content-box;
     &--secondary {
-      height: 300px;
+      height: 350px;
     }
   }
   &__text {
@@ -103,6 +102,10 @@
     &--center {
       text-align: center;
       margin-bottom: 20px;
+    }
+    &--delivery {
+      text-align: center;
+      margin-bottom: 50px;
     }
   }
 
@@ -124,5 +127,10 @@
   &__link {
     font-weight: 700;
     color: $text-color;
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
   }
 }
