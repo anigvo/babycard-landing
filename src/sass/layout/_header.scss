@@ -1,5 +1,10 @@
 .header {
   border-bottom: 1px solid $border-color;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
   &__container {
     display: flex;
     align-items: center;
@@ -56,7 +61,7 @@
       bottom: -1px;
     }
 
-    &--contacts {
+    &--top {
       display: flex;
       align-items: center;
       color: black;
@@ -67,7 +72,6 @@
       color: $main-color;
     }
   }
-
 
   &__icon {
     fill: currentColor;
@@ -90,5 +94,14 @@
         height: 18px;
       }
     }
+  }
+  &__lang {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 60px;
+  }
+  &__divider {
+    padding: 20px 0 10px;
   }
 }

@@ -1,0 +1,22 @@
+.messenger {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px;
+    text-align: center;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  &__item {
+    flex-basis: calc((100% - 45px) / 4);
+  }
+  &__img {
+    width: 45px;
+    height: 45px;
+    margin: auto;
+  }
+}

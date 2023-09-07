@@ -1,133 +1,77 @@
 .footer {
-  background-color: $background-color;
   padding: 60px 0px;
 
   &__container {
-    text-align: center;
-
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      align-items: baseline;
-      text-align: start;
-    }
-
-    &--tablet {
-      margin-bottom: 60px;
-      @media screen and (min-width: 768px) {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-around;
-      }
-
-      @media screen and (min-width: 1200px) {
-        display: contents;
-        margin-bottom: 0;
-      }
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 80px;
   }
 
   &__adress {
-    margin-bottom: 60px;
-    @media screen and (min-width: 768px) {
-      margin-bottom: 0;
-    }
-    @media screen and (min-width: 1200px) {
-      margin-right: 70px;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
-
-  &__logo {
-    &--color {
-
-    }
-  }
-
-  &__contacts {
-    margin-top: 20px;
-
-    @media screen and (min-width: 1200px) {
-      margin-top: 28px;
-    }
-  }
-
-  &__item:not(:last-child) {
-    margin-bottom: 8px;
-
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 12px;
-    }
-  }
-
-  &__link {
-
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    &--address {
-    }
-    &--contacts {
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover,
-      &:focus {
-      }
-    }
-  }
-
   &__content {
-
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    color: black;
-    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
   }
-
-  &__subscribe {
-    @media screen and (min-width: 1200px) {
-      margin-left: 93px;
-    }
+  &__text {
+    font-size: 18px;
   }
-
-  &__form {
-    margin-top: 20px;
-
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      margin-top: 10px;
-    }
-  }
-
-  &__input {
-    display: block;
-    color: $text-color;
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 16px;
-    line-height: 1.25;
-    align-items: center;
-    letter-spacing: 0.03em;
-    outline: none;
-    margin-bottom: 20px;
-    &::placeholder {
-      color: black;
-    }
-
-    @media screen and (min-width: 768px) {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 450px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 0;
-      width: 358px;
-    }
-  }
-
   &__icon {
-    margin-left: 10px;
-    fill: white; // пока не знаю что это
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  &__link {
+    color: $text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
+    &--main {
+      color: $main-color;
+      font-weight: 700;
+      font-size: 22px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &--nav {
+      gap: 5px;
+      font-weight: 700;
+      font-size: 17px;
+    }
+  }
+  &__item {
+    display: flex;
+  }
+  &__span {
+    font-weight: 700;
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__rights {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &-title {
+      font-weight: 700;
+      font-size: 22px;
+    }
+    &-text {
+      font-weight: 500;
+      font-size: 20px;
+    }
   }
 }
