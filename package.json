@@ -16,8 +16,7 @@
     "url": "https://github.com/anigvo/babycard-landing"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0",
-    "navigo": "^8.11.1"
+    "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",

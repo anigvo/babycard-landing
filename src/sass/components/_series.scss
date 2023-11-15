@@ -11,6 +11,9 @@
   }
   &__item {
     flex-basis: calc((100% - 60px) / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   &__img {
     margin-bottom: 20px;

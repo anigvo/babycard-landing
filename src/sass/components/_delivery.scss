@@ -26,10 +26,6 @@
     &:focus {
       color: $main-color;
     }
-    &:hover .delivery__icon,
-    &:focus .delivery__icon {
-      fill: $text-color;
-    }
   }
   &__item {
     flex-basis: calc((100% - 60px) / 4);
