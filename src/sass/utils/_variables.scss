@@ -2,15 +2,24 @@
   font-family: 'PragmaticaCTT';
   src: local(''), url('../fonts/pragmaticactt.woff2') format('woff2'),
     url('../fonts/pragmaticactt.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
   font-family: 'PragmaticaCTT Bold';
   src: local(''), url('../fonts/pragmaticactt-bold.woff2') format('woff2'),
     url('../fonts/pragmaticactt-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
 }
 
 $background-color: #ffffff;
 $text-color: #000000;
-$border-color: #0000004D;
+$border-color: #0000004d;
 $main-color: #e61919;
+$desktop: 1280px;
+$tablet: 768px;
+$phone: 480px;

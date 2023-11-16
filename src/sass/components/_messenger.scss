@@ -1,22 +1,38 @@
 .messenger {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 350px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 350px;
+  text-align: center;
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      gap: 15px;
+    }
   }
   &__item {
-    flex-basis: calc((100% - 45px) / 4);
+    flex-basis: calc((100% - 30px) / 4);
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc((100% - 45px) / 4);
+    }
   }
   &__img {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     margin: auto;
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      width: 45px;
+      height: 45px;
+    }
   }
 }

@@ -1,46 +1,94 @@
 .delivery {
   &__box {
     &:not(:last-child) {
-      margin-bottom: 50px;
+      margin-bottom: 30px;
+      @media screen and (min-width: $tablet) {
+      }
+      @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+      }
     }
   }
   &__title {
     text-align: center;
     margin-bottom: 20px;
     font-weight: 400;
-    letter-spacing: 1.19;
-    font-size: 27px;
+    letter-spacing: 1.14;
+    font-size: 24px;
     color: $main-color;
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      letter-spacing: 1.19;
+      font-size: 27px;
+    }
   }
   &__list {
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      gap: 20px;
+    }
   }
   &__link {
     display: flex;
     align-items: center;
     justify-content: center;
     color: $text-color;
+    flex-direction: column;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       color: $main-color;
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+    }
+  }
+  &__wrapper {
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      text-align: start;
     }
   }
   &__item {
     flex-basis: calc((100% - 60px) / 4);
   }
   &__icon {
-    width: 60px;
-    min-width: 60px;
-    height: 60px;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    margin-right: 0;
+    margin-bottom: 10px;
     fill: $main-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-right: 20px;
+
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      width: 60px;
+      min-width: 60px;
+      height: 60px;
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
   }
   &__text {
+    font-weight: 400;
     letter-spacing: 1.04;
-    font-size: 15px;
+    font-size: 13px;
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      letter-spacing: 1.14;
+      font-size: 15px;
+    }
     &:not(:last-child) {
       margin-bottom: 5px;
     }

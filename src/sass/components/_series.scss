@@ -1,6 +1,11 @@
 .series {
   border-bottom: 1px solid $border-color;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 60px;
+  }
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -10,30 +15,50 @@
     }
   }
   &__item {
-    flex-basis: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 30px) / 2);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
   }
   &__img {
     margin-bottom: 20px;
   }
   &__name {
-    margin-bottom: 10px;
     font-weight: 700;
-    font-size: 21px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 21px;
+    }
   }
   &__wrapper {
     margin-bottom: 10px;
   }
   &__text {
-    font-size: 17px;
+    font-size: 15px;
     &:not(:last-child) {
       margin-bottom: 3px;
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 17px;
     }
   }
   &__price {
     font-weight: 700;
-    font-size: 28px;
+    font-size: 24px;
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 28px;
+    }
   }
 }

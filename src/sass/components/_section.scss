@@ -1,14 +1,27 @@
 .section {
+  width: 100%;
   &:not(:last-child) {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 60px;
+    }
   }
   &__title {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     position: relative;
     text-align: center;
-    font-weight: 500;
-    letter-spacing: 1.4;
-    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.14;
+    font-size: 30px;
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 60px;
+      line-height: 1.4;
+      font-size: 38px;
+    }
     &::after {
       content: '';
       display: block;
@@ -23,18 +36,33 @@
     }
   }
   &__title-secondary {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-weight: 400;
-    letter-spacing: 1.19;
-    font-size: 27px;
+    line-height: 1.14;
+    font-size: 22px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      line-height: 1.19;
+      font-size: 27px;
+      justify-content: start;
+      margin-bottom: 20px;
+    }
     &--border {
       margin-bottom: 0;
       font-weight: 700;
-      letter-spacing: 1.04;
-      font-size: 22px;
+      line-height: 1.04;
+      font-size: 18px;
       color: $main-color;
+      @media screen and (min-width: $tablet) {
+      }
+      @media screen and (min-width: $desktop) {
+        line-height: 1.14;
+        font-size: 22px;
+      }
     }
     &--red {
       color: $main-color;
@@ -42,62 +70,122 @@
   }
   &__title-wrapper {
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
     border-bottom: 2px solid $main-color;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      justify-content: start;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+    }
   }
   &__wrapper {
-    display: flex;
+    display: block;
     &--margin-bottom {
       margin-bottom: 40px;
     }
     &:not(:last-child) {
-      margin-bottom: 40px;
+      margin-bottom: 60px;
+      @media screen and (min-width: $tablet) {
+      }
+      @media screen and (min-width: $desktop) {
+        margin-bottom: 40px;
+      }
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
     }
   }
   &__img {
-    width: 50%;
+    width: 100%;
+    margin-top: 20px;
     margin-left: 0;
-    margin-right: 20px;
+    margin-right: 0;
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      width: 50%;
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 20px;
+    }
     &--left {
       margin-right: 0;
-      margin-left: 20px;
+      margin-left: 0;
+      @media screen and (min-width: $tablet) {
+      }
+      @media screen and (min-width: $desktop) {
+        margin-right: 0;
+        margin-left: 20px;
+      }
     }
   }
 
   &__icon {
     fill: $main-color;
-    min-width: 40px;
-    width: 40px;
-    height: 40px;
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      min-width: 40px;
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &__video {
-    width: 50%;
+    display: block;
+    width: 100%;
     height: 450px;
-    margin-right: 20px;
+    margin-right: 0;
     shape-outside: content-box;
     &--secondary {
       height: 350px;
     }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      width: 50%;
+      margin-right: 20px;
+    }
   }
   &__text {
-    letter-spacing: 1.14;
-    font-size: 17px;
+    line-height: 1.08;
+    font-size: 16px;
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      text-align: start;
+      line-height: 1.14;
+      font-size: 17px;
+    }
     &--center {
       text-align: center;
     }
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+      @media screen and (min-width: $tablet) {
+      }
+      @media screen and (min-width: $desktop) {
+        margin-bottom: 20px;
+      }
     }
     &--bold {
       font-weight: 700;
     }
   }
   &__text-secondary {
-    letter-spacing: 1.14;
+    line-height: 1.14;
     font-size: 20px;
     margin-bottom: 10px;
     &--center {
@@ -106,15 +194,21 @@
     }
     &--delivery {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
+      @media screen and (min-width: $tablet) {
+      }
+      @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+      }
     }
   }
 
   &__content {
     flex: 1;
+    margin-top: 20px;
   }
   &__list {
-    letter-spacing: 1.14;
+    line-height: 1.14;
     font-size: 17px;
   }
   &__item {
