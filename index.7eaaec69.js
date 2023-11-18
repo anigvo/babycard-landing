@@ -1,2 +1,0 @@
-document.addEventListener("click",(e=>{(e.target.matches('a[href="/"]')||e.target.matches('a[href="/eng"]'))&&(t(e),e.preventDefault())}));const t=t=>{window.history.pushState({},"",t.target.href),n()},e={"/":"ua.html","/eng":"eng.html"},n=async()=>{const t=window.location.pathname;if(e[t]){const n=await fetch(e[t]).then((t=>t.text()));document.querySelector(".content").innerHTML=n}else window.history.pushState({},"","/"),n()};window.onpopstate=n,window.route=t,n();
-//# sourceMappingURL=index.7eaaec69.js.map
