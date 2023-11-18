@@ -1,7 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+.body-scroll-lock {
+  overflow: hidden;
+}
 body {
   background-color: $background-color;
   color: $text-color;
