@@ -1,6 +1,9 @@
 .mobile-menu {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
   position: fixed;
-   overflow: auto;
+  overflow: auto;
   top: 0;
   left: 0;
   width: 100%;
@@ -16,60 +19,42 @@
   }
 
   &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 48px 40px 84px 40px;
-    height: 100%;
-    &--inside {
-      padding: 0;
-    }
+    padding: 40px 40px;
   }
 
   &__list {
-    &--contacts {
-      margin-bottom: 64px;
+    &:not(:last-child) {
+      margin-bottom: 40px;
     }
   }
 
   &__item {
-    &--pages {
-      &:not(:last-child) {
-        margin-bottom: 32px;
-      }
-    }
-    &--contacts {
-      &:not(:last-child) {
-        margin-bottom: 32px;
-      }
+    &:not(:last-child) {
+      margin-bottom: 20px;
     }
   }
 
   &__link {
-    &--pages {
-      @media screen and (max-width: $phone) {
-        font-size: 30px;
-      }
-      font-size: 40px;
-      line-height: 1.17;
-      color: $text-color;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover,
-      &:focus {
-        color: $main-color;
-      }
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    line-height: 1.12;
+    color: $text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $main-color;
     }
-    &--contacts {
-      @media screen and (max-width: $phone) {
-        font-size: 24px;
-      }
-      font-size: 34px;
-      line-height: 1.17;
-      color: $text-color;
+    @media screen and (max-width: $phone) {
+      font-size: 18px;
+      line-height: 1.04;
     }
   }
 
   &__button {
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
     display: flex;
     border: none;
     border-radius: 0%;
@@ -85,23 +70,34 @@
     &:hover {
       color: $main-color;
     }
-    @media screen and (min-width: $tablet) {
-      display: none;
-    }
     &--close {
       position: absolute;
       top: 10px;
       right: 15px;
     }
-  }
-
-  @media screen and (min-width: $tablet) {
-    display: none;
+    @media screen and (max-width: $phone) {
+      width: 30px;
+      height: 30px;
+    }
   }
 
   &__icon {
     fill: currentColor;
     width: 40px;
     height: 40px;
+    @media screen and (max-width: $phone) {
+      width: 30px;
+      height: 30px;
+    }
+    &--contacts {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      @media screen and (max-width: $phone) {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+      }
+    }
   }
 }

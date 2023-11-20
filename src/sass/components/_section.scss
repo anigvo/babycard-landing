@@ -1,21 +1,28 @@
 .section {
   width: 100%;
   &:not(:last-child) {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     @media screen and (min-width: $tablet) {
+      margin-bottom: 40px;
     }
     @media screen and (min-width: $desktop) {
       margin-bottom: 60px;
     }
   }
   &__title {
-    margin-bottom: 40px;
     position: relative;
     text-align: center;
     font-weight: 400;
+    margin-bottom: 30px;
     line-height: 1.14;
-    font-size: 30px;
+    font-size: 26px;
+    @media screen and (max-width: $phone) {
+      line-height: 1.04;
+      font-size: 22px;
+    }
     @media screen and (min-width: $tablet) {
+      margin-bottom: 40px;
+      font-size: 30px;
     }
     @media screen and (min-width: $desktop) {
       margin-bottom: 60px;
@@ -26,38 +33,61 @@
       content: '';
       display: block;
       text-align: center;
-      width: 70px;
-      height: 7px;
+      width: 50px;
+      height: 5px;
       background-color: $main-color;
       position: absolute;
-      bottom: -20px;
+      bottom: -15px;
       left: 50%;
       transform: translateX(-50%);
+      @media screen and (max-width: $phone) {
+        width: 40px;
+        height: 4px;
+      }
+      @media screen and (min-width: $tablet) {
+        width: 70px;
+        height: 7px;
+        bottom: -20px;
+      }
     }
   }
   &__title-secondary {
-    margin-bottom: 15px;
-    font-weight: 400;
-    line-height: 1.14;
-    font-size: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.12;
+    margin-bottom: 15px;
+    @media screen and (max-width: $phone) {
+      font-size: 18px;
+      line-height: 1.04;
+      margin-bottom: 15px;
+    }
     @media screen and (min-width: $tablet) {
+      font-size: 22px;
+      line-height: 1.14;
+      margin-bottom: 15px;
     }
     @media screen and (min-width: $desktop) {
-      line-height: 1.19;
-      font-size: 27px;
       justify-content: start;
+      font-size: 27px;
+      line-height: 1.19;
       margin-bottom: 20px;
     }
     &--border {
+      text-align: start;
       margin-bottom: 0;
       font-weight: 700;
       line-height: 1.04;
-      font-size: 18px;
+      font-size: 16px;
       color: $main-color;
+      @media screen and (max-width: $phone) {
+        font-size: 14px;
+      }
       @media screen and (min-width: $tablet) {
+        font-size: 18px;
       }
       @media screen and (min-width: $desktop) {
         line-height: 1.14;
@@ -145,13 +175,23 @@
   &__video {
     display: block;
     width: 100%;
-    height: 450px;
+    height: 350px;
     margin-right: 0;
     shape-outside: content-box;
     &--secondary {
-      height: 350px;
+      height: 300px;
+      @media screen and (max-width: $phone) {
+        height: 200px;
+      }
+      @media screen and (min-width: $tablet) {
+        height: 350px;
+      }
+    }
+    @media screen and (max-width: $phone) {
+      height: 250px;
     }
     @media screen and (min-width: $tablet) {
+      height: 450px;
     }
     @media screen and (min-width: $desktop) {
       width: 50%;
@@ -162,8 +202,6 @@
     line-height: 1.08;
     font-size: 16px;
     text-align: center;
-    @media screen and (min-width: $tablet) {
-    }
     @media screen and (min-width: $desktop) {
       text-align: start;
       line-height: 1.14;
@@ -174,8 +212,6 @@
     }
     &:not(:last-child) {
       margin-bottom: 15px;
-      @media screen and (min-width: $tablet) {
-      }
       @media screen and (min-width: $desktop) {
         margin-bottom: 20px;
       }
@@ -186,8 +222,14 @@
   }
   &__text-secondary {
     line-height: 1.14;
-    font-size: 20px;
     margin-bottom: 10px;
+    font-size: 14px;
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+    }
     &--center {
       text-align: center;
       margin-bottom: 20px;
@@ -195,8 +237,6 @@
     &--delivery {
       text-align: center;
       margin-bottom: 30px;
-      @media screen and (min-width: $tablet) {
-      }
       @media screen and (min-width: $desktop) {
         margin-bottom: 50px;
       }
@@ -220,6 +260,9 @@
     }
   }
   &__link {
+    @media screen and (max-width: $phone) {
+      font-size: 13px;
+    }
     font-weight: 700;
     color: $text-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);

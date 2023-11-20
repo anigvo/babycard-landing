@@ -2,8 +2,6 @@
   &__box {
     &:not(:last-child) {
       margin-bottom: 30px;
-      @media screen and (min-width: $tablet) {
-      }
       @media screen and (min-width: $desktop) {
         margin-bottom: 50px;
       }
@@ -13,23 +11,37 @@
     text-align: center;
     margin-bottom: 20px;
     font-weight: 400;
-    letter-spacing: 1.14;
-    font-size: 24px;
+    font-size: 22px;
+    letter-spacing: 1.12;
     color: $main-color;
+    @media screen and (max-width: $phone) {
+      font-size: 20px;
+      line-height: 1.04;
+    }
     @media screen and (min-width: $tablet) {
+      font-size: 24px;
+      letter-spacing: 1.14;
     }
     @media screen and (min-width: $desktop) {
-      letter-spacing: 1.19;
       font-size: 27px;
+      letter-spacing: 1.19;
     }
   }
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    @media screen and (min-width: $tablet) {
-    }
     @media screen and (min-width: $desktop) {
       gap: 20px;
+    }
+  }
+  &__item {
+    flex-basis: calc((100% - 10px) / 2);
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc((100% - 30px) / 4);
+    }
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc((100% - 60px) / 4);
     }
   }
   &__link {
@@ -57,9 +69,7 @@
       text-align: start;
     }
   }
-  &__item {
-    flex-basis: calc((100% - 60px) / 4);
-  }
+
   &__icon {
     width: 40px;
     min-width: 40px;

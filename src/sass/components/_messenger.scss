@@ -2,8 +2,11 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 350px;
+  width: 100%;
   text-align: center;
+  @media screen and (min-width: $tablet) {
+    width: 350px;
+  }
   &__list {
     display: flex;
     flex-wrap: wrap;
