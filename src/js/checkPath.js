@@ -6,5 +6,5 @@ if (
   currentPath !== '/'
 ) {
   window.location.href = '/';
-  window.history.pushState({}, '', '/');
+  window.history.pushState({}, '', '/babycard-landing/');
 }
