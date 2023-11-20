@@ -6,8 +6,6 @@ document.addEventListener('click', e => {
   if (isAllowedLink) {
     route(e);
     e.preventDefault();
-  } else {
-    console.log('ELSE OPS');
   }
 });
 
