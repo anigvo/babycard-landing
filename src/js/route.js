@@ -28,7 +28,7 @@ const handleLocation = async () => {
     document.querySelector('.content').innerHTML = html;
     mobileMenu();
   } else {
-    // window.history.pushState({}, '', '/');
+    window.history.pushState({}, '', '/');
     handleLocation();
   }
 };
