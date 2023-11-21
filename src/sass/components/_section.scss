@@ -222,8 +222,10 @@
   }
   &__text-secondary {
     line-height: 1.14;
-    margin-bottom: 10px;
     font-size: 14px;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
     @media screen and (min-width: $tablet) {
       font-size: 16px;
     }
@@ -233,13 +235,6 @@
     &--center {
       text-align: center;
       margin-bottom: 20px;
-    }
-    &--delivery {
-      text-align: center;
-      margin-bottom: 30px;
-      @media screen and (min-width: $desktop) {
-        margin-bottom: 50px;
-      }
     }
   }
 
@@ -262,6 +257,13 @@
   &__link {
     @media screen and (max-width: $phone) {
       font-size: 13px;
+    }
+    font-size: 14px;
+    @media screen and (min-width: $tablet) {
+      font-size: 15px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 17px;
     }
     font-weight: 700;
     color: $text-color;
