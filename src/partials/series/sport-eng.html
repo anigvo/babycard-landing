@@ -13,11 +13,22 @@
 
     <ul class="series__list">
       <li class="series__item">
-        <img loading="lazy"
-          class="series__img"
-          src="./images/sport/hockey.png"
-          alt="Product card"
-        />
+        <picture  class="series__img">
+          <source
+            srcset="
+              ./images/sport/hockey.jpg    1x,
+              ./images/sport/hockey@2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+
+          <img
+            loading="lazy"
+           
+            src="./images/sport/hockey.jpg"
+            alt="Product card"
+          />
+        </picture>
         <h3 class="series__name">Set of plastic cards «Hockey»</h3>
         <div class="series__wrapper">
           <p class="series__text">Article: С.S-001</p>

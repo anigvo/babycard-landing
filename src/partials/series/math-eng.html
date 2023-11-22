@@ -16,11 +16,19 @@
 
     <ul class="series__list">
       <li class="series__item">
-        <img loading="lazy"
-          class="series__img"
-          src="./images/math/math1.png"
-          alt="Product card"
-        />
+        <picture class="series__img">
+          <source
+            srcset="./images/math/math1.jpg 1x, ./images/math/math1@2x.jpg 2x"
+            type="image/jpeg"
+          />
+
+          <img
+            loading="lazy"
+            
+            src="./images/math/math1.jpg"
+            alt="Product card"
+          />
+        </picture>
         <h3 class="series__name">Learning to count. Digits from 1 to 20</h3>
         <div class="series__wrapper">
           <p class="series__text">Article: S.VM-001</p>
@@ -38,11 +46,19 @@
       </li>
 
       <li class="series__item">
-        <img loading="lazy"
-          class="series__img"
-          src="./images/math/math2.png"
-          alt="Product card"
-        />
+        <picture class="series__img">
+          <source
+            srcset="./images/math/math2.jpg 1x, ./images/math/math2@2x.jpg 2x"
+            type="image/jpeg"
+          />
+
+          <img
+            loading="lazy"
+            
+            src="./images/math/math2.jpg"
+            alt="Product card"
+          />
+        </picture>
         <h3 class="series__name">Learning to count. Numbers from 1 to 20</h3>
         <div class="series__wrapper">
           <p class="series__text">Article: S.VM-002</p>

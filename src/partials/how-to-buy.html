@@ -48,12 +48,21 @@
           >
         </p>
       </div>
-      <img
-        loading="lazy"
-        class="section__img section__img--left"
-        src="./images/how-to-buy/img.png"
-        alt="Image with phone and email"
-      />
+      <picture class="section__img section__img--left">
+        <source
+          srcset="
+            ./images/how-to-buy/how-to-buy.jpg    1x,
+            ./images/how-to-buy/how-to-buy@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+
+        <img
+          loading="lazy"
+          src="./images/how-to-buy/how-to-buy.jpg"
+          alt="Image with phone and email"
+        />
+      </picture>
     </div>
   </div>
 </section>
